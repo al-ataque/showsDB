@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Mi Base de Datos de Películas",
+    "version": "1.0",
+    "description": "Extensión para guardar películas o series, nota y enlace.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage",
+      "tabs"
+    ]
+  }
+  

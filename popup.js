@@ -57,15 +57,17 @@ document.getElementById('getLink').addEventListener('click', function() {
   
       result.movies.forEach((movie, index) => {
         const li = document.createElement('li');
-        const domain = (new URL(movie.link)).hostname; // Extraemos el dominio del enlace
+        const domain = (new URL(movie.link)).hostname;
         
         li.innerHTML = `
-          <div class="movie-info">
-            <strong>${movie.name}</strong> 
-            Nota: ${movie.rating} 
-            <a href="${movie.link}" target="_blank">${domain}</a>
+          <div class="movie-item">
+            <div class="movie-info">
+              <strong>${movie.name}</strong>
+              <span>Nota: ${movie.rating}</span>
+              <a href="${movie.link}" target="_blank">${domain}</a>
+            </div>
+            <button class="delete-btn" data-index="${index}">×</button>
           </div>
-          <button class="delete-btn" data-index="${index}">Eliminar</button>
         `;
         
         movieList.appendChild(li);

@@ -72,24 +72,47 @@
       }
       .movie-info strong {
         display: block;
+        margin-bottom: 5px;
         font-size: 16px;
         color: #333;
+      }
+      .movie-info span{
+        display: block;
+        color: #666;
       }
       .movie-info a {
         text-decoration: none;
         color: #1a73e8;
       }
+
+
+      .movie-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
       .delete-btn {
-        background-color: #ff5c5c;
+        background-color: #ff4d4d;
         color: white;
         border: none;
-        padding: 5px 10px; /* Botón más pequeño y ajustado */
-        border-radius: 4px;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        font-size: 16px;
         cursor: pointer;
-        flex-shrink: 0; /* Evitar que el botón de eliminar se expanda */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        flex-shrink: 0;
       }
+
       .delete-btn:hover {
-        background-color: #d80000;
+        background-color: #ff0000;
       }
     </style>
     <title>Películas/Series Guardadas</title>
